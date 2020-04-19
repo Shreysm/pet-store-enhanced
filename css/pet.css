@@ -1,0 +1,152 @@
+body{
+	color: #666666;
+	background:#FFFFFF;
+	font-family: Verdana,Arial,sans-serif;
+    
+	
+}
+
+h1
+{
+		background:#000033;
+		line-height: 200%;
+		color:#FFFFFF;
+		margin:0px;
+        padding: 4px;
+}
+
+h2{
+	color: #3399CC;
+	font-family: Georgia,serif;
+   /* padding: 6px;*/
+}
+/*p{
+	 padding: 6px;
+}*/
+nav{
+
+    	font-weight: bold;
+	    background: #90C7E3;
+	    padding: 20px;    
+	    height:100%;
+
+  
+
+}
+a.plain:link,a.plain:visited{
+	text-decoration: none;
+	color: navy;
+	
+}
+#plain{
+  text-decoration: none;
+  color: #666666;
+}
+address{
+  text-align: center;
+	font-size: .70em;
+	font-style:italic;
+	padding: 5px;
+	
+}
+#add{
+  font-weight: bold;
+}
+#wrapper {
+	 width: 80%;
+   margin:auto;
+   border-spacing: 10px;
+
+     	}
+.row{
+    display: table;
+    width: 100%;
+}
+.row2{
+  display:flex;
+}
+.columnleft{
+	float: left;
+	display: table-cell;
+   /* padding: 1px;*/
+    width: 20%;
+   /* height: 740px;*/
+}
+span.error{
+  color:red;
+}
+
+span.success{
+  color:green;
+  font-weight: bold;
+}
+.columnright{
+	float: left;
+	display: table-cell;
+   /* padding: 10px;*/
+    width: 80%;
+    
+    
+}
+.cr2{
+	padding-left: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+td{
+	column-width: 200px;
+	vertical-align: top;
+}
+img{
+	max-width: 100%;
+}
+
+@media only screen and (max-width:480px) {
+  /* For mobile phones: */
+ /* nav{
+  	height:50%;
+  }*/
+  .columnleft{
+
+     height:150px;
+     width:100%;
+  }
+  table,thead,tbody,td,tr{
+  	display: block;
+  	/*margin-left: 5px;*/
+  	padding: 3px;
+  	vertical-align: top;
+
+  }
+  .columnright {
+    width:100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 861px) {
+  /* For tablets: */
+ /* nav{
+    height:50%;
+  }*/
+  .columnleft{
+
+     height:150px;
+     width:100%;
+  }
+  table,thead,tbody,td,tr,th{
+    display: block;
+    /*margin-left: 5px;*/
+    padding: 8px;
+    text-align: left;
+
+    
+  }
+  
+  .columnright {
+    width:100%;
+  }
+}
